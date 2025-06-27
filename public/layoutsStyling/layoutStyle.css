@@ -1,0 +1,194 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Replace with your preferred font */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #333; /* Replace with the color of your links */
+}
+
+/* Top bar styles */
+.top-bar {
+    background-color: #9ecdd7; /* Replace with the color of your top bar */
+    padding: 10px 0;
+}
+
+
+.login-signup a {
+    color: #ffffff;
+    background-color: #409cac;
+    text-align: center;
+    float: right;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #409cac;
+    border-width: 2px;
+
+}
+
+.usernamebtn{
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    float: right;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.login-signup button {
+    color: #ffffff;
+    background-color: #409cac;
+    text-align: center;
+    float: right;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #409cac;
+    border-width: 2px;
+}
+
+
+
+
+.user-picture{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    
+}
+
+
+
+/* Main navigation bar styles */
+.main-nav {
+    background-color: #9ecdd7; /* Replace with the color of your nav bar */
+    color: white;
+    padding: 15px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+  }
+
+.main-nav .website-name a,
+.main-nav .nav-links a {
+    color: white; /* Replace with the color of your navigation links */
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+.main-nav .website-name {
+    float: left;
+    font-size: 20px;
+    
+
+}
+
+.main-nav .nav-links {
+    float: right;
+    font-size: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .main-nav .website-name,
+    .main-nav .nav-links {
+        float: none;
+        text-align: center;
+    }
+
+    .main-nav .nav-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .login-signup a {
+        display: block;
+        margin: 5px auto;
+        text-align: center;
+    }
+}
+
+
+/* Footer styles */
+.site-footer {
+    background-color: #73b6c5; /* Footer background color */
+    color: white;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-section p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li,
+.footer-section ul li a {
+    color: #ffffff; /* Footer text/link color */
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}

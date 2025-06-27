@@ -1,0 +1,313 @@
+/* General styles */
+
+
+
+/* Banner styles */
+.banner {
+    background-color: #73b6c5; /* Replace with your banner's background color */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.banner h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Replace with the color of your banner title */
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adjust the space between elements as needed */
+}
+
+.search-area select {
+    padding: 10px;
+    border: 1px solid #ccc; /* Replace with any specific border styling */
+    border-radius: 7px; /* Optional for rounded corners */
+}
+
+select {
+    width: 300px;
+  }
+
+  select option {
+    width: 300px;
+  }
+
+.search-button {
+    padding: 10px 20px;
+    width: 300px;
+    background-color: #409cac !important; /* Replace with your button's background color */
+    color: white;
+    border-style: solid !important;
+    border-width: 1.5px !important;
+    border-color: #ccc !important;
+    border-radius: 5px !important; /* Optional for rounded corners */
+    cursor: pointer;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .search-area {
+        flex-direction: column;
+    }
+
+    .search-area select,
+    .search-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Browse by Popular type styles */
+.popular-types {
+    background-color: #f9f9f9; /* Replace with your chosen background color */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.popular-types h2 {
+    color: black; /* Replace with the color of the section title */
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.type-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.type-box {
+    width: calc(25% - 20px); /* Adjust width, considering the margin */
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.type-box img:hover {
+    box-shadow: 8px 8px 5px rgb(199, 201, 201);
+}
+
+
+.type-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+.type-box:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+}
+
+.type-box p {
+    margin-top: 15px;
+}
+
+.type-box p:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .type-box {
+        width: calc(33.333% - 20px); /* 3 per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .type-box {
+        width: calc(50% - 20px); /* 2 per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .type-box {
+        width: 100%; /* 1 per row */
+        margin: 10px 0;
+    }
+}
+
+
+/* Second Banner styles */
+.host-event-banner {
+    background-color: #73b6c5; /* Replace with your chosen background color */
+    padding: 75px 0;
+    margin: 100px;
+    border-radius: 15px;
+}
+
+.host-event-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.host-event-image {
+    flex-basis: 50%;
+    max-width: 55%;
+    height: auto;
+    margin-right: 100px;
+    border-radius: 10px;
+
+}
+
+.host-event-text {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.host-event-text h2 {
+    color: #ffffff; /* Replace with the color of the section title */
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+.host-event-text p {
+    color: #ffffff; /* Replace with the color of the section title */
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.host-event-button {
+    padding: 10px 20px;
+    background-color: #409cac; /* Replace with your button's background color */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #ffffff;
+    border-radius: 5px; /* Optional for rounded corners */
+    cursor: pointer;
+}
+
+
+
+.host-event-button:hover {
+    box-shadow: 3px 3px 1px rgb(199, 201, 201);
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .host-event-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .host-event-image,
+    .host-event-text {
+        flex-basis: 100%;
+    }
+
+    .host-event-button {
+        margin-top: 20px;
+    }
+}
+
+
+/* Upcoming Events styles */
+.upcoming-events {
+    background-color: #fff; /* Replace with your chosen background color */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.upcoming-events h2 {
+    color: black; /* Replace with the color of the section title */
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.event-box {
+    background-color: #e6e4e4;
+    padding: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #e6e4e4;
+    border-radius: 17px; /* Optional for rounded corners */
+    cursor: pointer;
+}
+
+
+.event-box:hover {
+    box-shadow: 8px 8px 5px rgb(199, 201, 201);
+}
+
+.event-box:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+}
+
+.event-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+.event-box p {
+    margin-top: 20px;
+}
+
+.expand-events {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #409cac; /* Replace with your button's background color */
+    font-size: 16px;
+    color: white;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #ccc;
+    border-radius: 8px; /* Optional for rounded corners */
+    cursor: pointer;
+}
+
+.expand-events:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .events-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+

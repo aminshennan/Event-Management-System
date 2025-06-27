@@ -1,0 +1,131 @@
+/* Events Page Styles */
+
+
+
+.events-banner {
+    background-color: #73b6c5; /* Replace with your banner's background color */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.events-title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: #ffffff; /* Replace with the color of your banner title */
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.event-filters {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adjust spacing between filters as needed */
+}
+
+.event-filters select {
+    padding: 10px;
+    border: 1px solid #ccc; /* Replace with any specific border styling */
+    border-radius: 7px; /* Optional for rounded corners */
+}
+
+select {
+    width: 200px;
+  }
+
+select option {
+    width: 200px;
+  }
+
+.filter-button {
+    padding: 10px 20px;
+    width: 300px;
+    background-color: #409cac !important; /* Replace with your button's background color */
+    color: white;
+    border-style: solid !important;
+    border-width: 1.5px !important;
+    border-color: #ccc !important;
+    border-radius: 5px !important; /* Optional for rounded corners */
+    cursor: pointer;
+}
+
+.events-grid {
+    padding: 20px 0;
+}
+
+.section-title {
+    margin-bottom: 2rem;
+    margin-top: 30px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    color: black; /* black text, adjust color as needed */
+}
+
+.event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px; /* Adjust to manage spacing between event cards */
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+}
+
+.event-card {
+    width: calc(33.333% - 10px); /* Three items per row, adjust spacing as needed */
+    border: 1px solid #ddd; /* Light grey border, adjust color as needed */
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: white;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto; /* Adjust height as needed, or use a fixed height */
+    display: block;
+}
+
+.event-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.event-name {
+    margin: 10px 0;
+    color: #333; /* Dark grey text, adjust color as needed */
+}
+
+.event-description {
+    color: #666; /* Medium grey text, adjust color as needed */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .event-card {
+        width: calc(50% - 10px); /* Two items per row for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .event-filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-filters select,
+    .filter-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .event-card {
+        width: 100%; /* Full width for mobile */
+    }
+}

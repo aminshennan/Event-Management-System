@@ -1,0 +1,174 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.event-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.left-side,
+.right-side {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-side {
+    flex: 3;
+}
+
+.left-side h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Styles for the event picture */
+.event-picture-box img {
+    width: auto;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Styles for the event details */
+.event-details-box {
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.detail {
+    background: #e9e9e9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styles for participants */
+.participants-box {
+    margin-top: 20px;
+    
+}
+
+.participant {
+    display: inline-block;
+    margin-right: 10px;
+    width: calc(33.333% - 20px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.participant img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+/* Styles for event creator box */
+.event-creator-box {
+    text-align: center;
+    background: #e9e9e9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.event-creator-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Styles for Google Maps container */
+.location-map-box {
+    height: 250px; /* Adjust as needed */
+    background: grey; /* Placeholder color */
+    border-radius: 10px;
+}
+
+/* Styles for join event button */
+.join-event-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join-event-box{
+    margin-top: 150px;
+}
+
+.edit-event-button {
+    padding: 10px;
+    background-color: #36393c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.leave-event-button {
+    padding: 10px;
+    background-color: #9e0c0c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .event-details-container {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        flex: none;
+        width: 100%;
+    }
+
+    .participant {
+        width: 100%; /* Make participant boxes stack on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .participant img {
+        width: 60px;
+        height: 60px; /* Adjust participant image size on very small screens */
+    }
+}
